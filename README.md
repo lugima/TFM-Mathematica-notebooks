@@ -2,7 +2,9 @@
 
 En este repositorio encontrará los principales notebooks de Mathematica que he creado y utilizado para obtener los resultados de mi Trabajo de Fin de Máster.
 También incluyo una carpeta con la info. del modelo para su implementación en FeynRules.
+
 (Nota 1: Todos los paquetes y softwares externos utilizados se encuentra debidamente citados en la memoria)
+
 (Nota 2: Pido disculpas de antemano por la posible poca claridad del código. No tenía pensado que estos notebooks vieran la luz, al menos en este estado, pero considero necesario facilitar el acceso a ellos dado que son parte esencial de mi TFM.)
 
 Contiene:
