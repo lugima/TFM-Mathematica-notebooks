@@ -1,0 +1,65 @@
+M$ModelName = "model";
+
+FeynmanGauge = True;
+
+M$GaugeGroups = {
+  U1Y  == { 
+    Abelian          -> True,  
+    CouplingConstant -> g1, 
+    GaugeBoson       -> B, 
+    Charge           -> Y
+  }
+};
+
+M$ClassesDescription = {
+
+  V[1] == { 
+    ClassName     -> B, 
+    SelfConjugate -> True,
+    Mass          -> 0,
+    Width         -> 0
+  },
+
+  S[1] == { 
+    ClassName      -> S, 
+    SelfConjugate  -> True,
+    Mass           -> m0
+  }
+};
+
+M$Parameters = {
+
+  g1 == { 
+    ParameterType    -> Internal
+  }
+
+};
+
+
+(* Lagrangian *) (* LGM | Included the tadpole, the cubic term and Lag5 and Lag7 *)
+
+Lag4 := a/2 del[S,mu] del[S,mu] + sigma S + m0^2/2 S^2 + kappa3 S^3 + lmbd3 S^4
+
+Lag5 := c51 S^5 + r51 S^2 del[del[S,mu],mu]
+
+Lag6 := c61 S^6 + r61 del[del[S,mu],mu] del[del[S,nu],nu] + r62 S^3 del[del[S,mu],mu]
+
+Lag7 := c71 S^7 + r71 S^4 del[del[S,mu],mu] + r72 S del[del[S,mu],mu] del[del[S,nu],nu] + r73 del[S,mu] del[S,mu] del[del[S,nu],nu]
+
+Lag8 := c81 S^8 + c82 S^2 del[del[S,nu],mu] del[del[S,nu],mu] + r81 S del[del[del[del[del[del[S,mu],mu],nu],nu],rho],rho] + r82 S^3 del[del[del[del[S,mu],mu],nu],nu] + r83 S^2 del[del[S,mu],mu] del[del[S,nu],nu] + r84 S^5 del[del[S,mu],mu]
+
+LagT := Lag4 + Lag5 + Lag6 + Lag7 + Lag8
+
+(* Minkowski *)
+
+Lag4Min := a/2 del[S,mu] del[S,mu] - sigma S - m0^2/2 S^2 - kappa3 S^3 - lmbd3 S^4
+
+Lag5Min := c51 S^5 + r51 S^2 del[del[S,mu],mu]
+
+Lag6Min := c61 S^6 + r61 del[del[S,mu],mu] del[del[S,nu],nu] + r62 S^3 del[del[S,mu],mu]
+
+Lag7Min := c71 S^7 + r71 S^4 del[del[S,mu],mu] + r72 S del[del[S,mu],mu] del[del[S,nu],nu] + r73 del[S,mu] del[S,mu] del[del[S,nu],nu]
+
+Lag8Min := c81 S^8 + c82 S^2 del[del[S,nu],mu] del[del[S,nu],mu] + r81 S del[del[del[del[del[del[S,mu],mu],nu],nu],rho],rho] + r82 S^3 del[del[del[del[S,mu],mu],nu],nu] + r83 S^2 del[del[S,mu],mu] del[del[S,nu],nu] + r84 S^5 del[del[S,mu],mu]
+
+LagTMinkowski := Lag4Min + Lag5Min + Lag6Min + Lag7Min + Lag8Min

@@ -1,0 +1,65 @@
+M$ModelName = "model";
+
+FeynmanGauge = True;
+
+M$GaugeGroups = {
+  U1Y  == { 
+    Abelian          -> True,  
+    CouplingConstant -> g1, 
+    GaugeBoson       -> B, 
+    Charge           -> Y
+  }
+};
+
+M$ClassesDescription = {
+
+  V[1] == { 
+    ClassName     -> B, 
+    SelfConjugate -> True,
+    Mass          -> 0,
+    Width         -> 0
+  },
+
+  F[1] == {
+    ClassName      -> Psi,
+    SelfConjugate  -> False,
+    Mass           -> 0
+  },
+
+  S[1] == { 
+    ClassName      -> phi, 
+    SelfConjugate  -> True,
+    Mass           -> 0
+  }
+};
+
+M$Parameters = {
+
+  g1 == { 
+    ParameterType    -> Internal
+  },
+
+  lmbd == { 
+    ParameterType    -> Internal
+  },
+
+  mphi == { 
+    ParameterType    -> Internal
+  }
+};
+
+
+(* Lagrangian *) 
+(* LGM | Included the cubic term *)
+
+LagMinkowski := 1/2 del[phi,mu] del[phi,mu] - 1/2 mphi^2 phi^2 - kappa phi^3 - lmbd phi^4 + I Psibar.Ga[mu].del[Psi,mu] - g1 phi Psibar.Psi
+
+(* LGM | The transformation to Euclidean space from a Minkowski metric with signature (+---) implies changing: 
+a) del^0 -> Idel^0_E, del^i -> del^i_E 
+b) Gamma^0 -> Gamma^0_E, Gamma^i -> IGamma^i_E
+c) (From a) and b)) del[phi,mu] del[phi,mu] -> -del[phi,mu] del[phi,mu], I Psibar.Ga[mu].del[Psi,mu] -> -Psibar.Ga[mu].del[Psi,mu]
+d) We can remove a global minus sign *)
+
+LagEuclidean := 1/2 del[phi,mu] del[phi,mu] + 1/2 mphi^2 phi^2 + kappa phi^3 + lmbd phi^4 + Psibar.Ga[mu].del[Psi,mu] + g1 phi Psibar.Psi
+
+LagEuclideanOriginal := 1/2 del[phi,mu] del[phi,mu] + 1/2 mphi^2 phi^2 + kappa phi^3 + lmbd phi^4 + I Psibar.Ga[mu].del[Psi,mu] + g1 phi Psibar.Psi

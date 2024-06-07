@@ -1,0 +1,47 @@
+{sigma3 -> (T^(3/2)*\[Kappa])/4, 
+ K\[Phi] -> g^2/(12*Pi^2) + (3*\[Kappa]^2*Zeta[3])/(64*Pi^4*T^2), 
+ r61 -> (7*g^2*Zeta[3])/(384*Pi^4*T^2) + (9*\[Kappa]^2*Zeta[5])/
+    (10240*Pi^6*T^4), r81 -> (-31*g^2*Zeta[5])/(10240*Pi^6*T^4) - 
+   (9*\[Kappa]^2*Zeta[7])/(229376*Pi^8*T^6), 
+ m23 -> (g^2*T^2)/6 + T^2*\[Lambda], 
+ r51 -> (-3*\[Kappa]*\[Lambda]*Zeta[3])/(32*Pi^4*T^(3/2)) + 
+   (27*\[Kappa]^3*Zeta[5])/(1024*Pi^6*T^(7/2)), 
+ r72 -> (9*\[Kappa]*\[Lambda]*Zeta[5])/(1280*Pi^6*T^(7/2)) - 
+   (27*\[Kappa]^3*Zeta[7])/(8192*Pi^8*T^(11/2)), 
+ r73 -> (9*\[Kappa]*\[Lambda]*Zeta[5])/(1280*Pi^6*T^(7/2)) - 
+   (9*\[Kappa]^3*Zeta[7])/(4096*Pi^8*T^(11/2)), kappa3 -> 0, 
+ r62 -> (35*g^4*Zeta[3])/(576*Pi^4*T) - (\[Lambda]^2*Zeta[3])/(8*Pi^4*T) + 
+   (45*\[Kappa]^2*\[Lambda]*Zeta[5])/(256*Pi^6*T^3) - 
+   (135*\[Kappa]^4*Zeta[7])/(4096*Pi^8*T^5), 
+ c82 -> (31*g^4*Zeta[5])/(10240*Pi^6*T^3) + (9*\[Lambda]^2*Zeta[5])/
+    (640*Pi^6*T^3) - (9*\[Kappa]^2*\[Lambda]*Zeta[7])/(1024*Pi^8*T^5) + 
+   (189*\[Kappa]^4*Zeta[9])/(131072*Pi^10*T^7), 
+ r82 -> (-217*g^4*Zeta[5])/(20480*Pi^6*T^3) - (3*\[Lambda]^2*Zeta[5])/
+    (1280*Pi^6*T^3) - (9*\[Kappa]^2*\[Lambda]*Zeta[7])/(2048*Pi^8*T^5) + 
+   (315*\[Kappa]^4*Zeta[9])/(262144*Pi^10*T^7), 
+ r83 -> (-279*g^4*Zeta[5])/(20480*Pi^6*T^3) + (9*\[Lambda]^2*Zeta[5])/
+    (1280*Pi^6*T^3) - (45*\[Kappa]^2*\[Lambda]*Zeta[7])/(4096*Pi^8*T^5) + 
+   (945*\[Kappa]^4*Zeta[9])/(262144*Pi^10*T^7), lmbd3 -> 0, 
+ r71 -> (27*\[Kappa]*\[Lambda]^2*Zeta[5])/(64*Pi^6*T^(5/2)) - 
+   (1215*\[Kappa]^3*\[Lambda]*Zeta[7])/(4096*Pi^8*T^(9/2)) + 
+   (2835*\[Kappa]^5*Zeta[9])/(65536*Pi^10*T^(13/2)), 
+ c51 -> (-27*\[Kappa]*\[Lambda]^2*Zeta[3])/(8*Pi^4*Sqrt[T]) + 
+   (81*\[Kappa]^3*\[Lambda]*Zeta[5])/(64*Pi^6*T^(5/2)) - 
+   (243*\[Kappa]^5*Zeta[7])/(2048*Pi^8*T^(9/2)), 
+ r84 -> (-217*g^6*Zeta[5])/(5120*Pi^6*T^2) + (27*\[Lambda]^3*Zeta[5])/
+    (80*Pi^6*T^2) - (1053*\[Kappa]^2*\[Lambda]^2*Zeta[7])/(1024*Pi^8*T^4) + 
+   (3969*\[Kappa]^4*\[Lambda]*Zeta[9])/(8192*Pi^10*T^6) - 
+   (15309*\[Kappa]^6*Zeta[11])/(262144*Pi^12*T^8), 
+ c61 -> (7*g^6*Zeta[3])/(192*Pi^4) - (9*\[Lambda]^3*Zeta[3])/(4*Pi^4) + 
+   (243*\[Kappa]^2*\[Lambda]^2*Zeta[5])/(64*Pi^6*T^2) - 
+   (1215*\[Kappa]^4*\[Lambda]*Zeta[7])/(1024*Pi^8*T^4) + 
+   (1701*\[Kappa]^6*Zeta[9])/(16384*Pi^10*T^6), 
+ c71 -> (81*\[Kappa]*\[Lambda]^3*Zeta[5])/(16*Pi^6*T^(3/2)) - 
+   (1215*\[Kappa]^3*\[Lambda]^2*Zeta[7])/(256*Pi^8*T^(7/2)) + 
+   (5103*\[Kappa]^5*\[Lambda]*Zeta[9])/(4096*Pi^10*T^(11/2)) - 
+   (6561*\[Kappa]^7*Zeta[11])/(65536*Pi^12*T^(15/2)), 
+ c81 -> (-31*g^8*Zeta[5])/(2048*Pi^6*T) + (81*\[Lambda]^4*Zeta[5])/
+    (32*Pi^6*T) - (1215*\[Kappa]^2*\[Lambda]^3*Zeta[7])/(128*Pi^8*T^3) + 
+   (25515*\[Kappa]^4*\[Lambda]^2*Zeta[9])/(4096*Pi^10*T^5) - 
+   (45927*\[Kappa]^6*\[Lambda]*Zeta[11])/(32768*Pi^12*T^7) + 
+   (216513*\[Kappa]^8*Zeta[13])/(2097152*Pi^14*T^9)}
