@@ -3,11 +3,11 @@
 En este repositorio encontrará los principales notebooks de Mathematica que he creado y utilizado para obtener los resultados de mi Trabajo de Fin de Máster.
 También incluyo una carpeta con la info. del modelo para su implementación en FeynRules.
 
-(Nota 1: Todos los paquetes y softwares externos utilizados se encuentra debidamente citados en la memoria)
+(Nota 1: Todos los paquetes y softwares externos utilizados se encuentran debidamente citados en la memoria)
 
-(Nota 2: Pido disculpas de antemano por la posible poca claridad del código. No tenía pensado que estos notebooks vieran la luz, al menos en este estado, pero considero necesario facilitar el acceso a ellos dado que son parte esencial de mi TFM.)
+(Nota 2: Es posible que el código no resulte especialmente claro y eficiente. No tenía pensado que estos notebooks vieran la luz, al menos en este estado, pero considero necesario facilitar el acceso a ellos dado que son parte esencial de mi TFM.)
 
-Contiene:
+Este repositorio contiene:
 
 - singlet_T_0205 | Carpeta que contiene el modelo 4D (teoría UV) y el modelo 3D (teoría efectiva) con la base de operadores generado con BasisGen. También incluye los notebooks empleados en el matching entre ambas teorías.
 - compare_matchings.nb | Notebook que compara los matchings con y sin loops de escalares.
