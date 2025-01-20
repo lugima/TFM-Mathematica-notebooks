@@ -1,6 +1,6 @@
 ¡Hola!
 
-En este repositorio encontrará los principales notebooks de Mathematica que he creado y utilizado para obtener los resultados del trabajo de inesvtigación presentado al Certamen Arquímedes 2024.
+En este repositorio encontrará los principales notebooks de Mathematica que he creado y utilizado para obtener los resultados del trabajo de investigación presentado al Certamen Arquímedes 2024.
 También incluyo una carpeta con la info. del modelo para su implementación en FeynRules.
 
 (Nota 1: Todos los paquetes y softwares externos utilizados se encuentran debidamente citados en la memoria)
